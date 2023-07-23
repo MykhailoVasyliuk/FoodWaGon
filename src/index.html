@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodWaGon</title>
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./sass/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <a class="logo" href="./index.html">
+            <img
+              class="logo__img"
+              src="./images/logo/foodwagon.png"
+              alt="logo"
+            />
+            <div class="logo__name">
+              <span class="logo__food">food</span>
+              <span class="logo__wa">wa</span>
+              <span class="logo__g">G</span>
+              <span class="logo__on">on</span>
+            </div>
+          </a>
+
+          <div class="location">
+            <span class="locatoin_deliver">Deliver to:</span>
+          </div>
+          <div class="nav">
+            <div class="search">
+              <img src="./images/search/Search.svg" alt="search_img" width="18px" />
+              <span class="search__food">Search Food</span>
+            </div>
+            <button class="button login-btn">
+              <img class="login-btn__svg" src="./images/btn/user.svg" alt="" />
+              Login
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="order">
+            <div class="container">
+              <div class="order__title">
+                <h1 class="order__title-text">Are you starving?</h1> 
+                <span class="order__hint">Within a few clicks, find meals that are accessible near you</span>
+           
+              
+                <div class="order-card">
+                  <form class="order-card__form">
+                    <div class="order-card__labels">
+                        <label class="order-card__delivery-label btn-is-active" for="address"> 
+                          <button class="order-card__delivery-btn order-card__btn">
+                            <img src="./images/order/delivery_Icon.svg" height="18px" alt="">
+                            <span>Delivery</span>
+                          </button>
+                        </label> 
+                        <label class="order-card__delivery-label" for="address"> 
+                          <button class="order-card__pickup-btn order-card__btn">
+                            <img src="./images/order/pickup_icon.svg" height="18px" alt="">
+                            <span>Pickup</span>
+                          </button>
+                        </label> 
+                    </div>
+                    <input type="text" id="address" name="address" placeholder="Enter Your Address"><br>
+                    <input type="submit" value="Find Food">
+                  </form>
+                </div>
+            </div>
+              <img class="order__eat" src="./images/order/erder_eat.png" alt="">
+
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">footer</div>
+      </footer>
+    </div>
+  </body>
+</html>

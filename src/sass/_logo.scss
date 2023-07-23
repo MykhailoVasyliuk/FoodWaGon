@@ -1,0 +1,32 @@
+.logo{
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+
+    &__img{
+        width: 28px;
+        height: 30px;
+        margin-right: 12px;
+    }
+
+    &__name{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        color: var(--main-color);
+        font-family: "Open sans";
+        font-size: 31px; 
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.778px;
+    }
+    &__food{
+        color: var(--second-color);
+    }
+    &__g{
+        font-size: 25px; 
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: -0.509px;
+    }
+}
