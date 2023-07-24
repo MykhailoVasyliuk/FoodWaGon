@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="./sass/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../node_modules/modern-normalize/modern-normalize.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body>
     <div class="wrapper">
@@ -22,7 +26,7 @@
               class="logo__img"
               src="./images/logo/foodwagon.png"
               alt="logo"
-            />
+            >
             <div class="logo__name">
               <span class="logo__food">food</span>
               <span class="logo__wa">wa</span>
@@ -36,7 +40,7 @@
           </div>
           <div class="nav">
             <div class="search">
-              <img src="./images/search/Search.svg" alt="search_img" width="18px" />
+              <img src="./images/search/Search.svg" alt="search_img" width="18" >
               <span class="search__food">Search Food</span>
             </div>
             <button class="button login-btn">
@@ -137,10 +141,309 @@
           </div>
  
         </div>
+        <div class="popular">
+          <div class="container popular__container">
+            <h2 class="popular__title">Popular items</h2>
+            <ul class="popular__list " >
+            <div class="slick-js"  data-slick='{"slidesToShow": 5, "slidesToScroll": 1}'> 
+               
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <div class="image">
+                    <img
+                      class="product__img"
+                      height="283px"
+                      load="lazy"
+                      srcset="
+                      ./images/popular/1lg.jpg 450w,
+                      ./images/popular/1lg-@2x.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                      src="./images/popular/1lg.jpg" 
+                      alt="Burger"
+                    />
+                  </div>
+
+                  <h3 class="product-card__name">Cheese Burger</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Burger Arena</div>
+                  </div>
+                  
+                  <div class="product-card__price">$3.88</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li> 
+
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <img
+                    class="product__img"
+                    height="283px"
+                    load="lazy"
+                    srcset="
+                    ./images/popular/2lg.jpg 450w,
+                    ./images/popular/2lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/1lg.jpg"
+                    alt="Cake"
+                  />
+                  <h3 class="product-card__name">Toffe’s Cake</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Top Sticks</div>
+                  </div>
+                  
+                  <div class="product-card__price">$4.00</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li>
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <img
+                    class="product__img"
+                    height="283px"
+                    load="lazy"
+                    srcset="
+                    ./images/popular/3lg.jpg 450w,
+                    ./images/popular/3lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/3lg.jpg"
+                    alt="Dancake"
+                  />
+                  <h3 class="product-card__name">Dancake</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Cake World</div>
+                  </div>
+                  
+                  <div class="product-card__price">$1.99</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li>
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <img
+                    class="product__img"
+                    height="283px"
+                    load="lazy"
+                    srcset="
+                    ./images/popular/4lg.jpg 450w,
+                    ./images/popular/4lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/4lg.jpg"
+                    alt="Crispy Sandwitch"
+                  />
+                  <h3 class="product-card__name">Crispy Sandwitch</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Fastfood Dine</div>
+                  </div>
+                  
+                  <div class="product-card__price">$3.00</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li>
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <img
+                    class="product__img"
+                    height="283px"
+                    load="lazy"
+                    srcset="
+                    ./images/popular/5lg.jpg 450w,
+                    ./images/popular/5lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/5lg.jpg"
+                    alt="Thai Soup"
+                  />
+                  <h3 class="product-card__name">Thai  Soup</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Foody man</div>
+                  </div>
+                  
+                  <div class="product-card__price">$2.79</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li>
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <div class="image">
+                    <img
+                      class="product__img"
+                      height="283px"
+                      load="lazy"
+                      srcset="
+                      ./images/popular/1lg.jpg 450w,
+                      ./images/popular/1lg-@2x.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                      src="./images/popular/1lg.jpg" 
+                      alt="Burger"
+                    />
+                  </div>
+
+                  <h3 class="product-card__name">Cheese Burger</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Burger Arena</div>
+                  </div>
+                  
+                  <div class="product-card__price">$3.88</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li> 
+
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <img
+                    class="product__img"
+                    height="283px"
+                    load="lazy"
+                    srcset="
+                    ./images/popular/2lg.jpg 450w,
+                    ./images/popular/2lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/1lg.jpg"
+                    alt="Cake"
+                  />
+                  <h3 class="product-card__name">Toffe’s Cake</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Top Sticks</div>
+                  </div>
+                  
+                  <div class="product-card__price">$4.00</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li>
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <img
+                    class="product__img"
+                    height="283px"
+                    load="lazy"
+                    srcset="
+                    ./images/popular/3lg.jpg 450w,
+                    ./images/popular/3lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/3lg.jpg"
+                    alt="Dancake"
+                  />
+                  <h3 class="product-card__name">Dancake</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Cake World</div>
+                  </div>
+                  
+                  <div class="product-card__price">$1.99</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li>
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <img
+                    class="product__img"
+                    height="283px"
+                    load="lazy"
+                    srcset="
+                    ./images/popular/4lg.jpg 450w,
+                    ./images/popular/4lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/4lg.jpg"
+                    alt="Crispy Sandwitch"
+                  />
+                  <h3 class="product-card__name">Crispy Sandwitch</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Fastfood Dine</div>
+                  </div>
+                  
+                  <div class="product-card__price">$3.00</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li>
+              <li class="product-card">
+                <img src="" alt="" class="product-card__img">
+                <div class="product-card__wrapper">
+                  <img
+                    class="product__img"
+                    height="283px"
+                    load="lazy"
+                    srcset="
+                    ./images/popular/5lg.jpg 450w,
+                    ./images/popular/5lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/5lg.jpg"
+                    alt="Thai Soup"
+                  />
+                  <h3 class="product-card__name">Thai  Soup</h3>
+                  <div class="product-card__location-thumb">
+                    <svg class="product-card__svg" width="14" height="22">
+                      <use href="./images/svg/sprite.svg#icon-mini-location"></use>
+                    </svg>
+                    <div class="product-card__location">Foody man</div>
+                  </div>
+                  
+                  <div class="product-card__price">$2.79</div>
+                  <button class="button product-card__button">Order Now</button>
+                </div>
+              </li>
+             </div>
+            </ul>
+          </div>
+        </div>
+        <div class="features">
+          <div class="container features__container">
+            <h2 class="popular__title">Popular items</h2>
+          </div>
+        </div>
       </main>
       <footer class="footer">
-        <div class="container">footer</div>
+       <div class="container">footer</div>
       </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slick.js"></script> 
+    
   </body>
 </html>

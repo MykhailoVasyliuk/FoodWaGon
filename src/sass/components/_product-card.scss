@@ -1,0 +1,57 @@
+// popular items
+.product-card{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    }  
+
+    &__name{
+        color:   #424242;
+  
+        font-size: 22px; 
+        font-weight: 700;
+        line-height: 1.2;  
+
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+
+    &__location-thumb{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 8px;
+
+        color: var(--theme-primary, #FFB30E);  
+        font-size: 22px; 
+        font-weight: 400;
+        line-height: 1.2;  
+    }
+
+    &__price{
+        color:  #212121;  
+        font-size: 22px; 
+        font-weight: 700;
+        line-height: 1.2;  
+        margin-bottom: 16px;
+    }
+
+    &__button{
+        color: #FFF;
+        text-align: center;  
+        font-size: 18px; 
+        font-weight: 700;
+        line-height: 1; 
+
+        min-width: 100%;
+        border-radius: 8px;
+        background: var(--theme-warning, #F17228);
+        box-shadow: 0px 20px 40px 0px rgba(250, 99, 35, 0.24);
+    }
+ }

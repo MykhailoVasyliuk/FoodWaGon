@@ -1,0 +1,30 @@
+.slick-list{
+    overflow: hidden;
+ }
+ .slick-js{
+    min-width: 0;
+ }
+ .slick-track{
+    display: flex;
+ }
+ .slick-js{
+     position: relative;
+ }
+ .slick-js .slick-arrow{
+    position: absolute;
+    font-size: 0px;
+    top: 30%;
+    width: 76px;
+    height: 76px;
+    z-index: 120;
+ }
+ .slick-js .slick-arrow.slick-prev{
+     left: 0;
+     transform: translateX(-100%);
+     background: url(../images/popular/Arrow-Left.svg) 0 0 /100% no-repeat;
+ }
+ .slick-js .slick-arrow.slick-next{
+    right: 0;
+    transform: translateX(100%);
+    background: url(../images/popular/Arrow-Right.svg) 0 0 /100% no-repeat;
+}

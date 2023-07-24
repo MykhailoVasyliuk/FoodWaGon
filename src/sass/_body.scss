@@ -15,16 +15,18 @@ body{
     flex: 1 1 auto;
 }
 
-.header {
 
-    &__container{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 16px;
-        padding-bottom: 16px; 
-    }
+.header {
+ 
+&__container{ 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px; 
+}
 
 }
+
 .location{
     display: flex; 
     align-items: center;
@@ -56,13 +58,10 @@ body{
     display: flex; 
     padding-top: 121px; 
 
-        background-image: url(../images/order/order_bg.jpg);
-        background-size: cover;
-        margin-bottom: 80px;
+    background-image: url(../images/order/order_bg.jpg);
+    background-size: cover;
+    margin-bottom: 80px;
 
-    &__container{
-
-    }
     &__title{
         display: flex;
         flex-direction: column;
@@ -124,8 +123,7 @@ body{
         border-radius: 8px;
         background-color: #F5F5F5;
     }
-    &__input::placeholder{  
-    }
+  
 
     &__inputs{
         display: flex;
@@ -205,6 +203,7 @@ input[type=text] {
 
  .work{
     background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) 0%, rgba(253, 237, 202, 0.00) 100%);
+    margin-bottom: 80px;
 
     &__title{
         color: #F17228;
@@ -249,3 +248,39 @@ input[type=text] {
         width: 307px;
     }
  }
+
+ .popular{
+    margin-bottom: 80px;
+
+    &__title{
+        color: #212121;
+        text-align: center;  
+        font-size: 43px; 
+        font-weight: 700;
+        line-height: 1.12;
+        margin-bottom: 88px;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__name{
+        color: #424242;  
+        font-size: 22px; 
+        font-weight: 700;
+        line-height: 1.2; 
+    }
+
+
+ }
+
+
+
+
