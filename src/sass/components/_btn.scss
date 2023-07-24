@@ -1,5 +1,9 @@
 // Основка кнопка
-
+button{
+    padding: 21px 48px;
+    border-radius: 8px;
+    border: 0px;
+}
 .login-btn {
     display: flex;
     padding: 14px 24px;
@@ -17,10 +21,6 @@
 
     box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
     border: 0px;
-
-    &__svg{
-        width: 16px;
-        height: 18px;
-    }
+ 
 }
 

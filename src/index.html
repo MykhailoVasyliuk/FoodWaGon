@@ -48,7 +48,7 @@
       </header>
       <main class="main">
         <div class="order">
-            <div class="container">
+            <div class="container order__container">
               <div class="order__title">
                 <h1 class="order__title-text">Are you starving?</h1> 
                 <span class="order__hint">Within a few clicks, find meals that are accessible near you</span>
@@ -70,14 +70,72 @@
                           </button>
                         </label> 
                     </div>
-                    <input type="text" id="address" name="address" placeholder="Enter Your Address"><br>
-                    <input type="submit" value="Find Food">
+                    <div class="order-card__inputs">
+                      <div class="order-card__input-block">
+                        <svg class="location-svg"
+                            width="18"
+                            height="34">
+                          
+                          <use href="./images/svg/sprite.svg#icon-location"></use>
+                        </svg>
+                        <input
+                        class="order-card__input"
+                        type="text"
+                        name="address"
+                        id="address"
+                        placeholder="Enter Your Address"
+                        required
+                       />
+                       
+                      </div>
+                      
+                      <button class="order-card__button">
+                        <svg class="order-card__search-svg"
+                        width="14"
+                        height="14">
+                      
+                       <use href="./images/svg/sprite.svg#icon-find"></use>
+                        </svg>
+                        <span class="order-card__button-text">
+                          Find Food
+                        </span>
+                      </button>
+                       
+                    </div>
+                    
                   </form>
                 </div>
             </div>
-              <img class="order__eat" src="./images/order/erder_eat.png" alt="">
-
+              <img class="order-card__eat" src="./images/order/erder_eat.png" alt="">
           </div>
+        </div>
+        <div class="work">
+          <div class="container work__container">
+          <h2 class="work__title">How does it work</h2>
+          <ul class="work__list">
+            <li class="work__card">
+              <img src="./images/work/location.png" alt="location">
+              <h3 class="work__step-title">Select location</h3>
+              <div class="work__text">Choose the location where your food will be delivered.</div>
+            </li>
+            <li class="work__card">
+              <img src="./images/work/menu.png" alt="menu">
+              <h3 class="work__step-title">Choose order</h3>
+              <div class="work__text">Check over hundreds of menus to pick your favorite food</div>
+            </li>
+            <li class="work__card">
+              <img src="./images/work/Invoice.png" alt="Invoice">
+              <h3 class="work__step-title">Pay advanced</h3>
+              <div class="work__text">It's quick, safe, and simple. Select several methods of payment</div>
+            </li>
+            <li class="work__card">
+              <img src="./images/work/donut.png" alt="donut">
+              <h3 class="work__step-title">Enjoy meals</h3>
+              <div class="work__text">Food is made and delivered directly to your home.</div>
+            </li>
+          </ul>
+          </div>
+ 
         </div>
       </main>
       <footer class="footer">
