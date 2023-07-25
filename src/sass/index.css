@@ -72,6 +72,7 @@ body {
 .search {
   display: flex;
   gap: 8px;
+  align-items: center;
   margin-right: 30px;
   font-size: 18px;
   font-weight: 700;
@@ -572,7 +573,7 @@ button {
 .login-btn {
   display: flex;
   padding: 14px 24px;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   gap: 10px;
   color: var(--main-color);
