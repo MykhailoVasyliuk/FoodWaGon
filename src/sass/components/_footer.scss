@@ -10,6 +10,7 @@
         font-size: 22px; 
         font-weight: 700;
         line-height: 1.2; 
+        margin-bottom: 69px;
     }
 
 }
@@ -162,4 +163,35 @@
     transform: translateY(-50%);
 }
 
- 
+ .signature{
+    display: flex;
+    justify-content: space-between;
+
+    &__rights{ 
+        font-size: 15px; 
+        font-weight: 400;
+        line-height: 1.2;  
+    }
+    &__company{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2; 
+    }
+    &__made{
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+    }
+
+ }
+   .made{
+        font-size: 15px; 
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .autor{
+        font-size: 15px; 
+        font-weight: 700;
+        line-height: 1.2;
+    }

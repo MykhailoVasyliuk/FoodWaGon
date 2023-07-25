@@ -166,9 +166,6 @@ body {
   border-radius: 8px;
   background: #FEF1EA;
 }
-.order-card__eat {
-  opacity: 0.8;
-}
 .order-card__button {
   display: flex;
   justify-content: center;
@@ -682,6 +679,7 @@ button {
   font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
+  margin-bottom: 69px;
 }
 
 .sities {
@@ -831,4 +829,37 @@ button {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+}
+
+.signature {
+  display: flex;
+  justify-content: space-between;
+}
+.signature__rights {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.signature__company {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.signature__made {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.made {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.autor {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
 }/*# sourceMappingURL=index.css.map */

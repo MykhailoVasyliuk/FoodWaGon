@@ -1,958 +1,918 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodWaGon</title>
-    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./sass/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="../node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container header__container">
-          <a class="logo" href="./index.html">
-            <img
-              class="logo__img"
-              src="./images/logo/foodwagon.png"
-              alt="logo"
-            />
-            <div class="logo__name">
-              <span class="logo__food">food</span>
-              <span class="logo__wa">wa</span>
-              <span class="logo__g">G</span>
-              <span class="logo__on">on</span>
-            </div>
-          </a>
-
-          <div class="location">
-            <span class="locatoin_deliver">Deliver to:</span>
-          </div>
-          <div class="nav">
-            <div class="search">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      <title>FoodWaGon</title>
+      <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="./sass/index.css" >
+      <link rel="preconnect" href="https://fonts.googleapis.com" >
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+      <link
+        rel="stylesheet"
+        href="../node_modules/modern-normalize/modern-normalize.css">
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap">
+      <link rel="stylesheet" type="text/css" href="slick/slick.css" >
+      
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" >
+    </head>
+    <body>
+      <div class="wrapper">
+        <header class="header">
+          <div class="container header__container">
+            <a class="logo" href="./index.html">
               <img
-                src="./images/search/Search.svg"
-                alt="search_img"
-                width="18"
-              />
-              <span class="search__food">Search Food</span>
+                class="logo__img"
+                src="./images/logo/foodwagon.png"
+                alt="logo" >
+              <div class="logo__name">
+                <span class="logo__food">food</span>
+                <span class="logo__wa">wa</span>
+                <span class="logo__g">G</span>
+                <span class="logo__on">on</span>
+              </div>
+            </a>
+
+            <div class="location">
+              <span class="locatoin_deliver">Deliver to:</span>
             </div>
-            <button class="button login-btn">
-              <img class="login-btn__svg" src="./images/btn/user.svg" alt="" />
-              Login
-            </button>
+            <div class="nav">
+              <div class="search">
+                <img
+                  src="./images/search/Search.svg"
+                  alt="search_img"
+                  width="18" >
+                <span class="search__food">Search Food</span>
+              </div>
+              <button class="button login-btn">
+                <img class="login-btn__svg" src="./images/btn/user.svg" alt="" >
+                Login
+              </button>
+            </div>
           </div>
-        </div>
-      </header>
-      <main class="main">
-        <div class="order">
-          <div class="container order__container">
-            <div class="order__title">
-              <h1 class="order__title-text">Are you starving?</h1>
-              <span class="order__hint"
-                >Within a few clicks, find meals that are accessible near
-                you</span
-              >
+        </header>
+        <main class="main">
+          <div class="order">
+            <div class="container order__container">
+              <div class="order__title">
+                <h1 class="order__title-text">Are you starving?</h1>
+                <span class="order__hint"
+                  >Within a few clicks, find meals that are accessible near
+                  you</span
+                >
 
-              <div class="order-card">
-                <form class="order-card__form">
-                  <div class="order-card__labels">
-                    <label
-                      class="order-card__delivery-label btn-is-active"
-                      for="address"
-                    >
-                      <button class="order-card__delivery-btn order-card__btn">
-                        <img
-                          src="./images/order/delivery_Icon.svg"
-                          height="18px"
-                          alt=""
-                        />
-                        <span>Delivery</span>
-                      </button>
-                    </label>
-                    <label class="order-card__delivery-label" for="address">
-                      <button class="order-card__pickup-btn order-card__btn">
-                        <img
-                          src="./images/order/pickup_icon.svg"
-                          height="18px"
-                          alt=""
-                        />
-                        <span>Pickup</span>
-                      </button>
-                    </label>
-                  </div>
-                  <div class="order-card__inputs">
-                    <div class="order-card__input-block">
-                      <svg class="location-svg" width="18" height="34">
-                        <use href="./images/svg/sprite.svg#icon-location"></use>
-                      </svg>
-                      <input
-                        class="order-card__input"
-                        type="text"
-                        name="address"
-                        id="address"
-                        placeholder="Enter Your Address"
-                        required
-                      />
-                    </div>
-
-                    <button class="order-card__button">
-                      <svg
-                        class="order-card__search-svg"
-                        width="14"
-                        height="14"
+                <div class="order-card">
+                  <form class="order-card__form">
+                    <div class="order-card__labels">
+                      <label
+                        class="order-card__delivery-label btn-is-active"
+                        for="address"
                       >
-                        <use href="./images/svg/sprite.svg#icon-find"></use>
-                      </svg>
-                      <span class="order-card__button-text"> Find Food </span>
-                    </button>
-                  </div>
-                </form>
+                        <button id="address" class="order-card__delivery-btn order-card__btn">
+                          <img
+                            src="./images/order/delivery_Icon.svg"
+                            height="18"
+                            alt="" >
+                          <span>Delivery</span>
+                        </button>
+                      </label>
+                      <label class="order-card__delivery-label" for="delivery">
+                        <button id="delivery" class="order-card__pickup-btn order-card__btn">
+                          <img
+                            src="./images/order/pickup_icon.svg"
+                            height="18"
+                            alt="" >
+                          <span>Pickup</span>
+                        </button>
+                      </label>
+                    </div>
+                    <div class="order-card__inputs">
+                      <div class="order-card__input-block">
+                        <svg class="location-svg" width="18" height="34">
+                          <use href="./images/svg/sprite.svg#icon-location"></use>
+                        </svg>
+                        <input
+                          class="order-card__input"
+                          type="text"
+                          name="address"
+                          id="address-input"
+                          placeholder="Enter Your Address"
+                          required >
+                      </div>
+
+                      <button class="order-card__button">
+                        <svg
+                          class="order-card__search-svg"
+                          width="14"
+                          height="14"
+                        >
+                          <use href="./images/svg/sprite.svg#icon-find"></use>
+                        </svg>
+                        <span class="order-card__button-text"> Find Food </span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
+              <img
+                class="order-card__eat"
+                src="./images/order/erder_eat.png"
+                alt="" >
             </div>
-            <img
-              class="order-card__eat"
-              src="./images/order/erder_eat.png"
-              alt=""
-            />
           </div>
-        </div>
-        <div class="work">
-          <div class="container work__container">
-            <h2 class="work__title">How does it work</h2>
-            <ul class="work__list">
-              <li class="work__card">
-                <img src="./images/work/location.png" alt="location" />
-                <h3 class="work__step-title">Select location</h3>
-                <div class="work__text">
-                  Choose the location where your food will be delivered.
-                </div>
-              </li>
-              <li class="work__card">
-                <img src="./images/work/menu.png" alt="menu" />
-                <h3 class="work__step-title">Choose order</h3>
-                <div class="work__text">
-                  Check over hundreds of menus to pick your favorite food
-                </div>
-              </li>
-              <li class="work__card">
-                <img src="./images/work/Invoice.png" alt="Invoice" />
-                <h3 class="work__step-title">Pay advanced</h3>
-                <div class="work__text">
-                  It's quick, safe, and simple. Select several methods of
-                  payment
-                </div>
-              </li>
-              <li class="work__card">
-                <img src="./images/work/donut.png" alt="donut" />
-                <h3 class="work__step-title">Enjoy meals</h3>
-                <div class="work__text">
-                  Food is made and delivered directly to your home.
-                </div>
-              </li>
-            </ul>
+          <div class="work">
+            <div class="container work__container">
+              <h2 class="work__title">How does it work</h2>
+              <ul class="work__list">
+                <li class="work__card">
+                  <img src="./images/work/location.png" alt="location" >
+                  <h3 class="work__step-title">Select location</h3>
+                  <div class="work__text">
+                    Choose the location where your food will be delivered.
+                  </div>
+                </li>
+                <li class="work__card">
+                  <img src="./images/work/menu.png" alt="menu" >
+                  <h3 class="work__step-title">Choose order</h3>
+                  <div class="work__text">
+                    Check over hundreds of menus to pick your favorite food
+                  </div>
+                </li>
+                <li class="work__card">
+                  <img src="./images/work/Invoice.png" alt="Invoice" >
+                  <h3 class="work__step-title">Pay advanced</h3>
+                  <div class="work__text">
+                    It's quick, safe, and simple. Select several methods of
+                    payment
+                  </div>
+                </li>
+                <li class="work__card">
+                  <img src="./images/work/donut.png" alt="donut" >
+                  <h3 class="work__step-title">Enjoy meals</h3>
+                  <div class="work__text">
+                    Food is made and delivered directly to your home.
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="popular">
-          <div class="container popular__container">
-            <h2 class="popular__title">Popular items</h2>
-            <ul class="popular__list">
-              <div
-                class="slick-js"
-                data-slick='{"slidesToShow": 5, "slidesToScroll": 1}'
-              >
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <div class="image">
+          <div class="popular">
+            <div class="container popular__container">
+              <h2 class="popular__title">Popular items</h2>
+              <ul class="popular__list">
+                <div
+                  class="slick-js"
+                  data-slick='{"slidesToShow": 5, "slidesToScroll": 1}'
+                >
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
+                      <div class="image">
+                        <img
+                          class="product__img"
+                          height="283px"
+                          loading="lazy"
+                          srcset="
+                            ./images/popular/1lg.jpg     450w,
+                            ./images/popular/1lg-@2x.jpg 900w
+                          "
+                          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                          src="./images/popular/1lg.jpg"
+                          alt="Burger" >
+                      </div>
+
+                      <h3 class="product-card__name">Cheese Burger</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Burger Arena</div>
+                      </div>
+
+                      <div class="product-card__price">$3.88</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
+                    </div>
+                  </li>
+
+                  <li class="product-card">
+                    <img src="" alt="." class="product-card__img" >
+                    <div class="product-card__wrapper">
                       <img
                         class="product__img"
                         height="283px"
-                        load="lazy"
+                        loading="lazy"
                         srcset="
-                          ./images/popular/1lg.jpg     450w,
-                          ./images/popular/1lg-@2x.jpg 900w
+                          ./images/popular/2lg.jpg     450w,
+                          ./images/popular/2lg-@2x.jpg 900w
                         "
                         sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                        src="./images/popular/1lg.jpg"
-                        alt="Burger"
-                      />
+                        src="./images/popular/1lg.jpg" 
+                        alt="">
+                      <h3 class="product-card__name">Toffe’s Cake</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Top Sticks</div>
+                      </div>
+
+                      <div class="product-card__price">$4.00</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
                     </div>
-
-                    <h3 class="product-card__name">Cheese Burger</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Burger Arena</div>
-                    </div>
-
-                    <div class="product-card__price">$3.88</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <img
-                      class="product__img"
-                      height="283px"
-                      load="lazy"
-                      srcset="
-                        ./images/popular/2lg.jpg     450w,
-                        ./images/popular/2lg-@2x.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                      src="./images/popular/1lg.jpg"
-                      alt="Cake"
-                    />
-                    <h3 class="product-card__name">Toffe’s Cake</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Top Sticks</div>
-                    </div>
-
-                    <div class="product-card__price">$4.00</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <img
-                      class="product__img"
-                      height="283px"
-                      load="lazy"
-                      srcset="
-                        ./images/popular/3lg.jpg     450w,
-                        ./images/popular/3lg-@2x.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                      src="./images/popular/3lg.jpg"
-                      alt="Dancake"
-                    />
-                    <h3 class="product-card__name">Dancake</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Cake World</div>
-                    </div>
-
-                    <div class="product-card__price">$1.99</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <img
-                      class="product__img"
-                      height="283px"
-                      load="lazy"
-                      srcset="
-                        ./images/popular/4lg.jpg     450w,
-                        ./images/popular/4lg-@2x.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                      src="./images/popular/4lg.jpg"
-                      alt="Crispy Sandwitch"
-                    />
-                    <h3 class="product-card__name">Crispy Sandwitch</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Fastfood Dine</div>
-                    </div>
-
-                    <div class="product-card__price">$3.00</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <img
-                      class="product__img"
-                      height="283px"
-                      load="lazy"
-                      srcset="
-                        ./images/popular/5lg.jpg     450w,
-                        ./images/popular/5lg-@2x.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                      src="./images/popular/5lg.jpg"
-                      alt="Thai Soup"
-                    />
-                    <h3 class="product-card__name">Thai Soup</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Foody man</div>
-                    </div>
-
-                    <div class="product-card__price">$2.79</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <div class="image">
+                  </li>
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
                       <img
                         class="product__img"
                         height="283px"
-                        load="lazy"
+                        loading="lazy"
                         srcset="
-                          ./images/popular/1lg.jpg     450w,
-                          ./images/popular/1lg-@2x.jpg 900w
+                          ./images/popular/3lg.jpg     450w,
+                          ./images/popular/3lg-@2x.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                        src="./images/popular/3lg.jpg"
+                        alt="Dancake" >
+                      <h3 class="product-card__name">Dancake</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Cake World</div>
+                      </div>
+
+                      <div class="product-card__price">$1.99</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
+                    </div>
+                  </li>
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
+                      <img
+                        class="product__img"
+                        height="283px"
+                        loading="lazy"
+                        srcset="
+                          ./images/popular/4lg.jpg     450w,
+                          ./images/popular/4lg-@2x.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                        src="./images/popular/4lg.jpg"
+                        alt="Crispy Sandwitch" >
+                      <h3 class="product-card__name">Crispy Sandwitch</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Fastfood Dine</div>
+                      </div>
+
+                      <div class="product-card__price">$3.00</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
+                    </div>
+                  </li>
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
+                      <img
+                        class="product__img"
+                        height="283px"
+                        loading="lazy"
+                        srcset="
+                          ./images/popular/5lg.jpg     450w,
+                          ./images/popular/5lg-@2x.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                        src="./images/popular/5lg.jpg"
+                        alt="Thai Soup" >
+                      <h3 class="product-card__name">Thai Soup</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Foody man</div>
+                      </div>
+
+                      <div class="product-card__price">$2.79</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
+                    </div>
+                  </li>
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
+                      <div class="image">
+                        <img
+                          class="product__img"
+                          height="283px"
+                          loading="lazy"
+                          srcset="
+                            ./images/popular/1lg.jpg     450w,
+                            ./images/popular/1lg-@2x.jpg 900w
+                          "
+                          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                          src="./images/popular/1lg.jpg"
+                          alt="Burger" >
+                      </div>
+
+                      <h3 class="product-card__name">Cheese Burger</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Burger Arena</div>
+                      </div>
+
+                      <div class="product-card__price">$3.88</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
+                    </div>
+                  </li>
+
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
+                      <img
+                        class="product__img"
+                        height="283px"
+                        loading="lazy"
+                        srcset="
+                          ./images/popular/2lg.jpg     450w,
+                          ./images/popular/2lg-@2x.jpg 900w
                         "
                         sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
                         src="./images/popular/1lg.jpg"
-                        alt="Burger"
-                      />
-                    </div>
+                        alt="Cake" >
+                      <h3 class="product-card__name">Toffe’s Cake</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Top Sticks</div>
+                      </div>
 
-                    <h3 class="product-card__name">Cheese Burger</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Burger Arena</div>
+                      <div class="product-card__price">$4.00</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
                     </div>
+                  </li>
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
+                      <img
+                        class="product__img"
+                        height="283px"
+                        loading="lazy"
+                        srcset="
+                          ./images/popular/3lg.jpg     450w,
+                          ./images/popular/3lg-@2x.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                        src="./images/popular/3lg.jpg"
+                        alt="Dancake" >
+                      <h3 class="product-card__name">Dancake</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Cake World</div>
+                      </div>
 
-                    <div class="product-card__price">$3.88</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <img
-                      class="product__img"
-                      height="283px"
-                      load="lazy"
-                      srcset="
-                        ./images/popular/2lg.jpg     450w,
-                        ./images/popular/2lg-@2x.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                      src="./images/popular/1lg.jpg"
-                      alt="Cake"
-                    />
-                    <h3 class="product-card__name">Toffe’s Cake</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Top Sticks</div>
+                      <div class="product-card__price">$1.99</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
                     </div>
+                  </li>
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
+                      <img
+                        class="product__img"
+                        height="283px"
+                        loading="lazy"
+                        srcset="
+                          ./images/popular/4lg.jpg     450w,
+                          ./images/popular/4lg-@2x.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                        src="./images/popular/4lg.jpg"
+                        alt="Crispy Sandwitch" >
+                      <h3 class="product-card__name">Crispy Sandwitch</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Fastfood Dine</div>
+                      </div>
 
-                    <div class="product-card__price">$4.00</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <img
-                      class="product__img"
-                      height="283px"
-                      load="lazy"
-                      srcset="
-                        ./images/popular/3lg.jpg     450w,
-                        ./images/popular/3lg-@2x.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                      src="./images/popular/3lg.jpg"
-                      alt="Dancake"
-                    />
-                    <h3 class="product-card__name">Dancake</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Cake World</div>
+                      <div class="product-card__price">$3.00</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
                     </div>
+                  </li>
+                  <li class="product-card"> 
+                    <div class="product-card__wrapper">
+                      <img
+                        class="product__img"
+                        height="283"
+                        loading="lazy"
+                        srcset="
+                          ./images/popular/5lg.jpg     450w,
+                          ./images/popular/5lg-@2x.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                        src="./images/popular/5lg.jpg"
+                        alt="Thai Soup" >
+                      <h3 class="product-card__name">Thai Soup</h3>
+                      <div class="product-card__location-thumb">
+                        <svg class="product-card__svg" width="14" height="22">
+                          <use
+                            href="./images/svg/sprite.svg#icon-mini-location"
+                          ></use>
+                        </svg>
+                        <div class="product-card__location">Foody man</div>
+                      </div>
 
-                    <div class="product-card__price">$1.99</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <img
-                      class="product__img"
-                      height="283px"
-                      load="lazy"
-                      srcset="
-                        ./images/popular/4lg.jpg     450w,
-                        ./images/popular/4lg-@2x.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                      src="./images/popular/4lg.jpg"
-                      alt="Crispy Sandwitch"
-                    />
-                    <h3 class="product-card__name">Crispy Sandwitch</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Fastfood Dine</div>
+                      <div class="product-card__price">$2.79</div>
+                      <button class="button product-card__button">
+                        Order Now
+                      </button>
                     </div>
-
-                    <div class="product-card__price">$3.00</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-                <li class="product-card">
-                  <img src="" alt="" class="product-card__img" />
-                  <div class="product-card__wrapper">
-                    <img
-                      class="product__img"
-                      height="283px"
-                      load="lazy"
-                      srcset="
-                        ./images/popular/5lg.jpg     450w,
-                        ./images/popular/5lg-@2x.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                      src="./images/popular/5lg.jpg"
-                      alt="Thai Soup"
-                    />
-                    <h3 class="product-card__name">Thai Soup</h3>
-                    <div class="product-card__location-thumb">
-                      <svg class="product-card__svg" width="14" height="22">
-                        <use
-                          href="./images/svg/sprite.svg#icon-mini-location"
-                        ></use>
-                      </svg>
-                      <div class="product-card__location">Foody man</div>
-                    </div>
-
-                    <div class="product-card__price">$2.79</div>
-                    <button class="button product-card__button">
-                      Order Now
-                    </button>
-                  </div>
-                </li>
-              </div>
-            </ul>
-          </div>
-        </div>
-        <div class="features">
-          <div class="container features__container">
-            <h2 class="popular__title">Featured Restaurants</h2>
-            <ul class="features__cards">
-              <li class="features__item">
-                <img
-                  class="features__img"
-                  load="lazy"
-                  srcset="
-                    ./images/features/1lg.jpg     450w,
-                    ./images/features/1lg-@2x.jpg 900w
-                  "
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                  src="./images/popular/5lg.jpg"
-                  alt="Thai Soup"
-                  height="301px"
-                />
-                <div class="features__discount"></div>
-                <div class="features__status"></div>
-                <div class="features__info-thumb">
-                  <img
-                    src="./images/features/1.jpg"
-                    height="64px"
-                    alt=""
-                    class="features__logo"
-                  />
-                  <div class="features__name-block">
-                    <h3 class="features__name">Foodworld</h3>
-                    <div class="features__rait">
-                      <svg class="features__raiting-svg" width="25" height="23">
-                        <use href="./images/svg/sprite.svg#icon-star"></use>
-                      </svg>
-                      <span class="features__raiting">46</span>
-                    </div>
-                  </div>
+                  </li>
                 </div>
-                <span class="features__open-status features__open-status-tom"
-                  >Opens tomorrow</span
-                >
-              </li>
-              <li class="features__item">
-                <img
-                  class="features__img"
-                  load="lazy"
-                  srcset="
-                    ./images/features/2lg.jpg     450w,
-                    ./images/features/2lg-@2x.jpg 900w
-                  "
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                  src="./images/popular/5lg.jpg"
-                  alt="Thai Soup"
-                  height="301px"
-                />
-                <div class="features__discount"></div>
-                <div class="features__status"></div>
-                <div class="features__info-thumb">
-                  <img
-                    src="./images/features/2.jpg"
-                    height="64px"
-                    alt=""
-                    class="features__logo"
-                  />
-                  <div class="features__name-block">
-                    <h3 class="features__name">Pizzahub</h3>
-                    <div class="features__rait">
-                      <svg class="features__raiting-svg" width="25" height="23">
-                        <use href="./images/svg/sprite.svg#icon-star"></use>
-                      </svg>
-                      <span class="features__raiting">40</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="features__open-status features__open-status-tom"
-                  >Opens tomorrow</span
-                >
-              </li>
-              <li class="features__item">
-                <img
-                  class="features__img"
-                  load="lazy"
-                  srcset="
-                    ./images/features/3lg.jpg     450w,
-                    ./images/features/3lg-@2x.jpg 900w
-                  "
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                  src="./images/popular/5lg.jpg"
-                  alt="Thai Soup"
-                  height="301px"
-                />
-                <div class="features__discount"></div>
-                <div class="features__status"></div>
-                <div class="features__info-thumb">
-                  <img
-                    src="./images/features/3.jpg"
-                    height="64px"
-                    alt=""
-                    class="features__logo"
-                  />
-                  <div class="features__name-block">
-                    <h3 class="features__name">Donuts hut</h3>
-                    <div class="features__rait">
-                      <svg class="features__raiting-svg" width="25" height="23">
-                        <use href="./images/svg/sprite.svg#icon-star"></use>
-                      </svg>
-                      <span class="features__raiting">20</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="features__open-status features__open-status-now"
-                  >Open Now</span
-                >
-              </li>
-              <li class="features__item">
-                <img
-                  class="features__img"
-                  load="lazy"
-                  srcset="
-                    ./images/features/4lg.jpg     450w,
-                    ./images/features/4lg-@2x.jpg 900w
-                  "
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                  src="./images/popular/5lg.jpg"
-                  alt="Thai Soup"
-                  height="301px"
-                />
-                <div class="features__discount"></div>
-                <div class="features__status"></div>
-                <div class="features__info-thumb">
-                  <img
-                    src="./images/features/4.jpg"
-                    height="64px"
-                    alt=""
-                    class="features__logo"
-                  />
-                  <div class="features__name-block">
-                    <h3 class="features__name">Donuts hut</h3>
-                    <div class="features__rait">
-                      <svg class="features__raiting-svg" width="25" height="23">
-                        <use href="./images/svg/sprite.svg#icon-star"></use>
-                      </svg>
-                      <span class="features__raiting">50</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="features__open-status features__open-status-now"
-                  >Open Now</span
-                >
-              </li>
-            </ul>
-            <button class="button features__btn">
-              View All
-              <svg class="features__btn-svg" width="9" height="14">
-                <use href="./images/svg/sprite.svg#icon-mini-right-arrow"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="install">
-          <div class="container install__container">
-            <div class="install__roud"></div>
-            <img
-              class="install__img install__img-ferst"
-              load="lazy"
-              srcset="
-                ./images/install/Shadow2lg.png    450w,
-                ./images/install/Shadow2lg@2x.png 450w
-              "
-              sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-              src="./images/install/Shadow2lg.png"
-              alt="Thai Soup"
-              height="440px"
-            />
-            <img
-              class="install__img install__img-step"
-              load="lazy"
-              srcset="
-                ./images/install/iPhone.png    450w,
-                ./images/install/iPhone@2x.png 450w
-              "
-              sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-              src="./images/install/iPhone.png"
-              alt="Thai Soup"
-              height="530px"
-            />
-            <div class="install__wrapper">
-              <div class="install__block">
-                <h2 class="install__title">Install the app</h2>
-                <span class="install__text"
-                  >It's never been easier to order food. Look for the finest
-                  discounts and you'll be lost in a world of delectable
-                  food.</span
-                >
-              </div>
-              <div class="install__btns">
-                <button class="install__btn">
-                  <img src="./images/install/GP.png" alt="" />
-                </button>
-                <button class="install__btn">
-                  <img src="./images/install/GP.png" alt="" />
-                </button>
-              </div>
+              </ul>
             </div>
           </div>
-        </div>
-
-        <div class="present">
-          <div class="container present__container">
-            <div class="present__block present__left-block">
-              <div class="present__thumb">
-                <h2 class="present__title">
-                  Best deals
-                  <span class="present__highlight">Crispy Sandwiches</span>
-                </h2>
-                <div class="present__text">
-                  Enjoy the large size of sandwiches. Complete perfect slice of
-                  sandwiches.
-                </div>
-                <button class="present__button">
-                  Proceed to order
-                  <svg class="present__btn-svg" width="9" height="14">
-                    <use
-                      href="./images/svg/sprite.svg#icon-mini-right-arrow"
-                    ></use>
-                  </svg>
-                </button>
-              </div>
-
+          <div class="features">
+            <div class="container features__container">
+              <h2 class="popular__title">Featured Restaurants</h2>
+              <ul class="features__cards">
+                <li class="features__item">
+                  <img
+                    class="features__img"
+                    loading="lazy"
+                    srcset="
+                      ./images/features/1lg.jpg     450w,
+                      ./images/features/1lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/5lg.jpg"
+                    alt="Thai Soup"
+                    height="301" >
+                  <div class="features__discount"></div>
+                  <div class="features__status"></div>
+                  <div class="features__info-thumb">
+                    <img
+                      src="./images/features/1.jpg"
+                      height="64"
+                      alt=""
+                      class="features__logo" >
+                    <div class="features__name-block">
+                      <h3 class="features__name">Foodworld</h3>
+                      <div class="features__rait">
+                        <svg class="features__raiting-svg" width="25" height="23">
+                          <use href="./images/svg/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span class="features__raiting">46</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="features__open-status features__open-status-tom"
+                    >Opens tomorrow</span
+                  >
+                </li>
+                <li class="features__item">
+                  <img
+                    class="features__img"
+                    loading="lazy"
+                    srcset="
+                      ./images/features/2lg.jpg     450w,
+                      ./images/features/2lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/5lg.jpg"
+                    alt="Thai Soup"
+                    height="301" >
+                  <div class="features__discount"></div>
+                  <div class="features__status"></div>
+                  <div class="features__info-thumb">
+                    <img
+                      src="./images/features/2.jpg"
+                      height="64"
+                      alt=""
+                      class="features__logo" >
+                    <div class="features__name-block">
+                      <h3 class="features__name">Pizzahub</h3>
+                      <div class="features__rait">
+                        <svg class="features__raiting-svg" width="25" height="23">
+                          <use href="./images/svg/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span class="features__raiting">40</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="features__open-status features__open-status-tom"
+                    >Opens tomorrow</span
+                  >
+                </li>
+                <li class="features__item">
+                  <img
+                    class="features__img"
+                    loading="lazy"
+                    srcset="
+                      ./images/features/3lg.jpg     450w,
+                      ./images/features/3lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/5lg.jpg"
+                    alt="Thai Soup"
+                    height="301" >
+                  <div class="features__discount"></div>
+                  <div class="features__status"></div>
+                  <div class="features__info-thumb">
+                    <img
+                      src="./images/features/3.jpg"
+                      height="64"
+                      alt=""
+                      class="features__logo" >
+                    <div class="features__name-block">
+                      <h3 class="features__name">Donuts hut</h3>
+                      <div class="features__rait">
+                        <svg class="features__raiting-svg" width="25" height="23">
+                          <use href="./images/svg/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span class="features__raiting">20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="features__open-status features__open-status-now"
+                    >Open Now</span
+                  >
+                </li>
+                <li class="features__item">
+                  <img
+                    class="features__img"
+                    loading="lazy"
+                    srcset="
+                      ./images/features/4lg.jpg     450w,
+                      ./images/features/4lg-@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                    src="./images/popular/5lg.jpg"
+                    alt="Thai Soup"
+                    height="301" >
+                  <div class="features__discount"></div>
+                  <div class="features__status"></div>
+                  <div class="features__info-thumb">
+                    <img
+                      src="./images/features/4.jpg"
+                      height="64"
+                      alt=""
+                      class="features__logo" >
+                    <div class="features__name-block">
+                      <h3 class="features__name">Donuts hut</h3>
+                      <div class="features__rait">
+                        <svg class="features__raiting-svg" width="25" height="23">
+                          <use href="./images/svg/sprite.svg#icon-star"></use>
+                        </svg>
+                        <span class="features__raiting">50</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="features__open-status features__open-status-now"
+                    >Open Now</span
+                  >
+                </li>
+              </ul>
+              <button class="button features__btn">
+                View All
+                <svg class="features__btn-svg" width="9" height="14">
+                  <use href="./images/svg/sprite.svg#icon-mini-right-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="install">
+            <div class="container install__container">
+              <div class="install__roud"></div>
               <img
-                class="present__img"
-                load="lazy"
+                class="install__img install__img-ferst"
+                loading="lazy"
                 srcset="
-                  ./images/present/1lg.jpg    450w,
-                  ./images/present/1lg@2x.jpg 900w
+                  ./images/install/Shadow2lg.png    450w,
+                  ./images/install/Shadow2lg@2x.png 900w
                 "
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                src="./images/present/1lg.jpg"
+                src="./images/install/Shadow2lg.png"
                 alt="Thai Soup"
-                height="512px"
-              />
-            </div>
-            <div class="present__block present__right-block">
+                height="440" >
               <img
-                class="present__img"
-                load="lazy"
+                class="install__img install__img-step"
+                loading="lazy"
                 srcset="
-                  ./images/present/2lg.jpg    450w,
-                  ./images/present/2lg@2x.jpg 900w
+                  ./images/install/iPhone.png    450w,
+                  ./images/install/iPhone@2x.png 900w
                 "
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-                src="./images/present/2lg.jpg"
+                src="./images/install/iPhone.png"
                 alt="Thai Soup"
-                height="512px"
-              />
-              <div class="present__thumb">
-                <h2 class="present__title">
-                  Celebrate parties with
-                  <span class="present__highlight">Fried Chicken</span>
-                </h2>
-                <div class="present__text">
-                  Get the best fried chicken smeared with a lip smacking lemon
-                  chili flavor. Check out best deals for fried chicken.
+                height="530" >
+              <div class="install__wrapper">
+                <div class="install__block">
+                  <h2 class="install__title">Install the app</h2>
+                  <span class="install__text"
+                    >It's never been easier to order food. Look for the finest
+                    discounts and you'll be lost in a world of delectable
+                    food.</span
+                  >
                 </div>
-                <button class="present__button">
-                  Proceed to order
-                  <svg class="present__btn-svg" width="9" height="14">
-                    <use
-                      href="./images/svg/sprite.svg#icon-mini-right-arrow"
-                    ></use>
-                  </svg>
-                </button>
+                <div class="install__btns">
+                  <button class="install__btn">
+                    <img src="./images/install/GP.png" alt="" >
+                  </button>
+                  <button class="install__btn">
+                    <img src="./images/install/GP.png" alt="" >
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="cta">
-          <div class="container cta__container">
-            <h2 class="cta__title">Are you ready to order with the best deals?</h2>
-            <button class="button cta__button">Proceed to order
-              <svg class="present__btn-svg" width="9" height="14">
-                <use
-                  href="./images/svg/sprite.svg#icon-mini-right-arrow"
-                ></use>
-              </svg>
-            </button>
+
+          <div class="present">
+            <div class="container present__container">
+              <div class="present__block present__left-block">
+                <div class="present__thumb">
+                  <h2 class="present__title">
+                    Best deals
+                    <span class="present__highlight">Crispy Sandwiches</span>
+                  </h2>
+                  <div class="present__text">
+                    Enjoy the large size of sandwiches. Complete perfect slice of
+                    sandwiches.
+                  </div>
+                  <button class="present__button">
+                    Proceed to order
+                    <svg class="present__btn-svg" width="9" height="14">
+                      <use
+                        href="./images/svg/sprite.svg#icon-mini-right-arrow"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+
+                <img
+                  class="present__img"
+                  loading="lazy"
+                  srcset="
+                    ./images/present/1lg.jpg    450w,
+                    ./images/present/1lg@2x.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                  src="./images/present/1lg.jpg"
+                  alt="Thai Soup"
+                  height="512" >
+              </div>
+              <div class="present__block present__right-block">
+                <img
+                  class="present__img"
+                  loading="lazy"
+                  srcset="
+                    ./images/present/2lg.jpg    450w,
+                    ./images/present/2lg@2x.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+                  src="./images/present/2lg.jpg"
+                  alt="Thai Soup"
+                  height="512" >
+                <div class="present__thumb">
+                  <h2 class="present__title">
+                    Celebrate parties with
+                    <span class="present__highlight">Fried Chicken</span>
+                  </h2>
+                  <div class="present__text">
+                    Get the best fried chicken smeared with a lip smacking lemon
+                    chili flavor. Check out best deals for fried chicken.
+                  </div>
+                  <button class="present__button">
+                    Proceed to order
+                    <svg class="present__btn-svg" width="9" height="14">
+                      <use
+                        href="./images/svg/sprite.svg#icon-mini-right-arrow"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="sities">
-            <h3 class="sities__title">Our top cities</h3>
-            <ul class="sities__list">
-              <li class="sities__list-item">
-                <ul class="siti">
-                  <li><a href="">San Francisco</a></li>
-                  <li><a href="">Miami</a></li>
-                  <li><a href="">San Diego</a></li>
-                  <li><a href="">East Bay</a></li>
-                  <li><a href="">Long Beach</a></li>
-                </ul>
-              </li>
-              <li class="sities__list-item">
-                <ul class="siti">
-                  <li><a href="">Los Angeles</a></li>
-                  <li><a href="">Washington DC</a></li>
-                  <li><a href="">Seattle</a></li>
-                  <li><a href="">Portland</a></li>
-                  <li><a href="">Nashville</a></li>
-                </ul>
-              </li>
-              <li class="sities__list-item">
-                <ul class="siti">
-                  <li><a href="">New York City</a></li>
-                  <li><a href="">Orange County</a></li>
-                  <li><a href="">Atlanta</a></li>
-                  <li><a href="">Charlotte</a></li>
-                  <li><a href="">Denver</a></li>
-                </ul>
-              </li>
-              <li class="sities__list-item">
-                <ul class="siti">
-                  <li><a href="">Chicago</a></li>
-                  <li><a href="">Phoenix</a></li>
-                  <li><a href="">Las Vegas</a></li>
-                  <li><a href="">Sacramento</a></li>
-                  <li><a href="">Oklahoma City</a></li>
-                </ul>
-              </li>
-              <li class="sities__list-item">
-                <ul class="siti">
-                  <li><a href="">Columbus</a></li>
-                  <li><a href="">New Mexico</a></li>
-                  <li><a href="">Albuquerque</a></li>
-                  <li><a href="">Sacramento</a></li>
-                  <li><a href="">New Orleans</a></li>
-                </ul>
-              </li>
-            </ul>
+          <div class="cta">
+            <div class="container cta__container">
+              <h2 class="cta__title">Are you ready to order with the best deals?</h2>
+              <button class="button cta__button">Proceed to order
+                <svg class="present__btn-svg" width="9" height="14">
+                  <use
+                    href="./images/svg/sprite.svg#icon-mini-right-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="info">
-            <div class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <h3 class="menu__title">Company</h3> 
-                  <ul class="menu__links">
-                    <li class="menu__link">
-                      <a href="">About us</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="">Team</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="">Careers</a>
-                    </li>   
-                    <li class="menu__link">
-                      <a href="">Blog</a>
-                    </li>                                        
-                  </ul>  
+        </main>
+        <footer class="footer">
+          <div class="container footer__container">
+            <div class="sities">
+              <h3 class="sities__title">Our top cities</h3>
+              <ul class="sities__list">
+                <li class="sities__list-item">
+                  <ul class="siti">
+                    <li><a href="">San Francisco</a></li>
+                    <li><a href="">Miami</a></li>
+                    <li><a href="">San Diego</a></li>
+                    <li><a href="">East Bay</a></li>
+                    <li><a href="">Long Beach</a></li>
+                  </ul>
                 </li>
-                <li class="menu__item">
-                  <h3 class="menu__title">Contact</h3> 
-                    <ul class="menu__links">
-                      <li class="menu__link">
-                        <a href="">Help & Support</a>
-                      </li>
-                      <li class="menu__link">
-                        <a href="">Partner with us</a>
-                      </li>
-                      <li class="menu__link">
-                        <a href="">Ride with us</a>
-                      </li>
-                    </ul>
+                <li class="sities__list-item">
+                  <ul class="siti">
+                    <li><a href="">Los Angeles</a></li>
+                    <li><a href="">Washington DC</a></li>
+                    <li><a href="">Seattle</a></li>
+                    <li><a href="">Portland</a></li>
+                    <li><a href="">Nashville</a></li>
+                  </ul>
                 </li>
-                <li class="menu__item">
-                  <h3 class="menu__title">Legal</h3> 
-                  <ul class="menu__links">
-                      <li class="menu__link">
-                        <a href="">Terms & Conditions</a>
-                      </li>
-                      <li class="menu__link">
-                        <a href="">Refund & Cancellation</a>
-                      </li>
-                      <li class="menu__link">
-                        <a href="">Privacy Policy</a>
-                      </li>
-                    <li class="menu__link">
-                      <a href="">Cookie Policy</a>
-                    </li>
+                <li class="sities__list-item">
+                  <ul class="siti">
+                    <li><a href="">New York City</a></li>
+                    <li><a href="">Orange County</a></li>
+                    <li><a href="">Atlanta</a></li>
+                    <li><a href="">Charlotte</a></li>
+                    <li><a href="">Denver</a></li>
+                  </ul>
+                </li>
+                <li class="sities__list-item">
+                  <ul class="siti">
+                    <li><a href="">Chicago</a></li>
+                    <li><a href="">Phoenix</a></li>
+                    <li><a href="">Las Vegas</a></li>
+                    <li><a href="">Sacramento</a></li>
+                    <li><a href="">Oklahoma City</a></li>
+                  </ul>
+                </li>
+                <li class="sities__list-item">
+                  <ul class="siti">
+                    <li><a href="">Columbus</a></li>
+                    <li><a href="">New Mexico</a></li>
+                    <li><a href="">Albuquerque</a></li>
+                    <li><a href="">Sacramento</a></li>
+                    <li><a href="">New Orleans</a></li>
                   </ul>
                 </li>
               </ul>
             </div>
-            <div class="follow">
-              <h3 class="follow__title">Follow Us</h3>
-              <ul class="social__list">
-                <li class="social__link">
-                  <svg class="social__svg" width="24" height="24">
-                    <use
-                      href="./images/svg/sprite.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </li>
-                <li class="social__link">
-                  <svg class="social__svg" width="24" height="24">
-                    <use
-                      href="./images/svg/sprite.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </li>
-                <li class="social__link">
-                  <svg class="social__svg" width="24" height="24">
-                    <use
-                      href="./images/svg/sprite.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </li>
-              </ul>
-              <form class="subscribe__form">
-                <label class="subscribe-label" for="email">Receive exclusive offers in your mailbox</label> 
-                <div class="subscribe__thumb">
-                  <input type="email" id="subscribe__email" name="email" placeholder="Enter Your email"> 
-                  <button type="submit" class="button follow__button">Subscribe</button> 
-                  <svg class="subscribe-svg" width="24" height="34">
-                    <use
-                      href="./images/svg/sprite.svg#icon-email"
-                    ></use>
-                  </svg>
-                </div>
+            <div class="info">
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <h3 class="menu__title">Company</h3> 
+                    <ul class="menu__links">
+                      <li class="menu__link">
+                        <a href="">About us</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="">Team</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="">Careers</a>
+                      </li>   
+                      <li class="menu__link">
+                        <a href="">Blog</a>
+                      </li>                                        
+                    </ul>  
+                  </li>
+                  <li class="menu__item">
+                    <h3 class="menu__title">Contact</h3> 
+                      <ul class="menu__links">
+                        <li class="menu__link">
+                          <a href="">Help & Support</a>
+                        </li>
+                        <li class="menu__link">
+                          <a href="">Partner with us</a>
+                        </li>
+                        <li class="menu__link">
+                          <a href="">Ride with us</a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="menu__item">
+                    <h3 class="menu__title">Legal</h3> 
+                    <ul class="menu__links">
+                        <li class="menu__link">
+                          <a href="">Terms & Conditions</a>
+                        </li>
+                        <li class="menu__link">
+                          <a href="">Refund & Cancellation</a>
+                        </li>
+                        <li class="menu__link">
+                          <a href="">Privacy Policy</a>
+                        </li>
+                      <li class="menu__link">
+                        <a href="">Cookie Policy</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="follow">
+                <h3 class="follow__title">Follow Us</h3>
+                <ul class="social__list">
+                  <li class="social__link">
+                    <svg class="social__svg" width="24" height="24">
+                      <use
+                        href="./images/svg/sprite.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social__link">
+                    <svg class="social__svg" width="24" height="24">
+                      <use
+                        href="./images/svg/sprite.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social__link">
+                    <svg class="social__svg" width="24" height="24">
+                      <use
+                        href="./images/svg/sprite.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
+                <form class="subscribe__form">
+                  <label class="subscribe-label" for="subscribe__email">Receive exclusive offers in your mailbox</label> 
+                  <div class="subscribe__thumb">
+                    <input type="email" id="subscribe__email" name="email" placeholder="Enter Your email"> 
+                    <button type="submit" class="button follow__button">Subscribe</button> 
+                    <svg class="subscribe-svg" width="24" height="34">
+                      <use
+                        href="./images/svg/sprite.svg#icon-email"
+                      ></use>
+                    </svg>
+                  </div>
 
-              </form>
-            </div>            
-          </div>
-          <div class="signature">
-            <span class="rights">All rights Reserved</span>
-            <span class="company">&copy; Your Company, 2021</span>
-            <div class="made">
-               <span class="made">Made with 
-
-                by</span>
-               <span class="autor">Themewagon</span> 
+                </form>
+              </div>            
             </div>
-           
-          </div>
+            <div class="signature">
+              <span class="signature__rights">All rights Reserved
+                <span class="signature__company">&copy; Your Company, 2021</span>
+              </span>
+              <div class="signature__made">
+                <span class="made">Made with by</span>
+                <svg class="signature__icon" width="14" height="14">
+                  <use href="./images/svg/sprite.svg#icon-heart"></use>
+                </svg>
+                <span class="autor">Themewagon</span> 
+              </div>
+            
+            </div>
 
-        </div>
-      </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/slick.js"></script>
-  </body>
-</html>
+          </div>
+        </footer>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      <script 
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script 
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
+      <script src="./js/slick.min.js"></script>
+      <script src="./js/slick.js"></script>
+    </body>
+  </html>
