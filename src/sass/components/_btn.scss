@@ -3,6 +3,7 @@ button{
     padding: 21px 48px;
     border-radius: 8px;
     border: 0px;
+    transition: transform 0.5s;
 }
 .login-btn {
     display: flex;
@@ -23,4 +24,7 @@ button{
     border: 0px;
  
 }
-
+button:hover,
+button:focus{
+    transform: scale(1.05);
+}

@@ -26,7 +26,9 @@ body{
 }
 
 }
-
+#logo{
+    margin-right: 12px;
+}
 .location{
     display: flex; 
     align-items: center;
@@ -36,6 +38,18 @@ body{
     font-size: 18px; 
     font-weight: 700;
     line-height: 1;
+
+    &__deliver{
+        margin-right: 12px;
+    }
+
+    &__svg{
+        margin-right: 9px;
+    }
+    &__current{
+    font-weight: 400;
+    margin-right: 4px;
+    }
 }
 .nav{
     display: flex; 
@@ -315,7 +329,7 @@ input[type=text] {
     }
 
     &__logo{
-        margin-right: 24px;
+        margin-right: 24px; 
     }
 
     &__name-block{
